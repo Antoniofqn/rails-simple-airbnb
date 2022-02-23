@@ -1,0 +1,49 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+.flat-card {
+  width: 100%;
+  position: relative;
+  margin: 0.5rem 0 1rem 0;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+.card-content {
+  padding: 10%;
+}
+
+.card-details {
+  display: flex;
+  justify-content: space-around;
+}
+
+.col-md-4 {
+  flex: 0 0 auto;
+  width: 33.33333333%;
+}
+
+.card-actions {
+  display: flex;
+  justify-content: space-around;
+  padding: 5%
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-.5 * var(--bs-gutter-x));
+  margin-left: calc(-.5 * var(--bs-gutter-x));
+}
